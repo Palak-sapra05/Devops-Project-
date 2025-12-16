@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background: #ffffff;
+    width: 380px;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+}
+.container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+}
+
+.container input:focus {
+    border-color: #667eea;
+}
+.container button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.container button:hover {
+    background: #5a67d8;
+}
+#taskList {
+    margin-top: 20px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+#taskList li {
+    background: #f4f6fb;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#taskList li:hover {
+    background: #e2e6ff;
+    transform: scale(1.02);
+}
+.footer {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+}
+
